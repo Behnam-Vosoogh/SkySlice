@@ -1,7 +1,11 @@
 const apiKey = "e05bc71fa21bc776d4e5b5df72125f3a";
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=montreal&appid=${apiKey}&units=metric`;
-async function checkWeather() {
-  console.log(apiKey);
+const searchBox = document.querySelector(".search input");
+const searchBtn = document.querySelector(".search button");
+async function checkWeather(cityName) {
+  // cityName = "Montreal";
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+  console.log(apiURL);
 
   const response = await fetch(apiURL);
   var data = await response.json();
@@ -11,4 +15,7 @@ async function checkWeather() {
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + "km";
 }
-checkWeather();
+searchBtn.addEventListener("click", () => {
+  checkWeather(searchBox.value);
+});
+// checkWeather();
