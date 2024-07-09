@@ -26,6 +26,7 @@ async function checkWeather(cityName) {
   } else if (data.weather[0].main == "Mist") {
     weatherIcon.src = "images/mist.png";
   }
+  document.querySelector(".weather-icon").style.display = "block";
 }
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);

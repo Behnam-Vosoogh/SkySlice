@@ -83,3 +83,6 @@ body{
     margin-top: -6px;
 
 }
+.weather-icon{
+    display: none;
+}
