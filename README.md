@@ -16,4 +16,6 @@ A simple and user-friendly web application that fetches real-time weather inform
 * **HTML:** Structure of the web page.
 * **CSS:** Styling and visual presentation.
 * **JavaScript:**  Fetching weather data from the API, dynamic content updates, and error handling.
-* **OpenWeatherMap API:** Provides weather data.
+* **OpenWeatherMap API:** Provides weather data
+![Weather App's screenshot](https://github.com/Behnam-Vosoogh/Weather_App/blob/main/images/ScreenShot.png)
+
